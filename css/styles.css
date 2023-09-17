@@ -120,7 +120,11 @@ img {
 .section-one {
   background-color: #2e2f42;
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office-1.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -277,13 +281,12 @@ img {
 
 /*footer*/
 .footer {
+  display: flex;
   background-color: #2e2f42;
   padding: 100px 0;
 }
 .logo-footer {
   display: inline-block;
-  align-items: center;
-  flex-shrink: 0;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -303,11 +306,24 @@ img {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-
-
-.icon {
-  fill: none;
+.social-par {
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
 }
-.icon:hover {
-  fill: #03a9f4;
+.social-footer {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
 }
+.social-footer-link {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
