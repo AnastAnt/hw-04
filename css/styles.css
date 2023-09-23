@@ -93,19 +93,22 @@ img {
 .nav-link:focus {
   color: #404bbf;
 }
-.nav-link:hover::after {
+.nav-link::after {
   content: "";
-  position: absolute;
+  
   left: 0;
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;
+  overflow: hidden;
+  
 }
-
-
-
+.nav-link:hover::after {
+  position: absolute;
+  
+}
 .header-contact {
   display: flex;
   justify-content: flex-end;
@@ -149,7 +152,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
