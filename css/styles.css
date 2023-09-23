@@ -32,6 +32,7 @@ button {
 img {
   display: block;
 }
+
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -79,9 +80,13 @@ img {
 }
 .nav-link:hover {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:focus {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact {
@@ -102,9 +107,13 @@ img {
 }
 .header-contact-link:hover {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-link:focus {
   color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-nav {
@@ -159,10 +168,14 @@ img {
 }
 .section-one-button:hover {
   background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-one-button:focus {
   background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*section-two*/
@@ -325,6 +338,8 @@ img {
 }
 .box:hover .overlay {
   transform: translateX(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-text {
   color: var(--CLOUD, #f4f4fd);
