@@ -95,7 +95,7 @@ img {
 }
 .nav-link::after {
   content: "";
-  position: absolute; 
+  position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
@@ -103,11 +103,9 @@ img {
   border-radius: 2px;
   width: 100%;
   overflow: hidden;
-  
 }
 .nav-link:hover::after {
   position: absolute;
-  
 }
 .header-contact {
   display: flex;
@@ -156,6 +154,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
 }
 
 .section-big-title {
@@ -186,6 +185,7 @@ img {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-one-button:hover {
   background-color: #404bbf;
@@ -239,12 +239,17 @@ img {
   gap: 24px;
 }
 .icom-work {
-  width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
-  padding: 24px 100px;
+  background-color: var(--CLOUD, #f4f4fd);
   border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
-  background: var(--CLOUD, #f4f4fd);
+
+  width: 264px;
 }
 .section-text {
   font-size: 16px;
