@@ -73,7 +73,6 @@ img {
   display: flex;
   gap: 40px;
   position: relative;
-  color: #404bbf;
   
 }
 .menu::after {
